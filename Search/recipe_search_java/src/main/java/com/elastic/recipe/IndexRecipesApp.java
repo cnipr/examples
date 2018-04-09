@@ -32,7 +32,7 @@ public class IndexRecipesApp {
         try {
             // create client for localhost es
             TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
-                    .addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9300));
+                    .addTransportAddress(new TransportAddress(InetAddress.getByName("192.168.242.130"), 9300));
 
             // iterate through json files, indexing each
             for (int n = 0; n < files.length; n++) {

@@ -44,7 +44,7 @@ public class SearchRecipesServlet extends HttpServlet {
         TransportClient client = null;
         try {
             client = new PreBuiltTransportClient(Settings.EMPTY);
-            client.addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9300));
+            client.addTransportAddress(new TransportAddress(InetAddress.getByName("192.168.242.130"), 9300));
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
